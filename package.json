@@ -1,12 +1,12 @@
 {
     "devDependencies": {
         "@vuepress/plugin-active-header-links": "1.6.0",
-        "@vuepress/plugin-back-to-top": "1.6.0",
-        "@vuepress/plugin-medium-zoom": "1.6.0",
-        "@vuepress/plugin-nprogress": "1.6.0",
+        "@vuepress/plugin-back-to-top": "1.8.0",
+        "@vuepress/plugin-medium-zoom": "1.8.0",
+        "@vuepress/plugin-nprogress": "1.8.0",
         "@vuepress/plugin-pagination": "^1.0.0-alpha.50",
-        "@vuepress/theme-vue": "1.6.0",
-        "vuepress": "1.6.0",
+        "@vuepress/theme-vue": "1.8.0",
+        "vuepress": "^1.8.0",
         "vuepress-plugin-container": "^2.1.2",
         "vuepress-plugin-element-tabs": "^0.2.8",
         "vuepress-plugin-flowchart": "^1.4.3",
@@ -20,11 +20,11 @@
         "show-help": "vuepress --help"
     },
     "name": "notebook",
-    "version": "1.0.0",
+    "version": "1.8.0",
+    "private": true,
+    "description": "docs of VuePress",
     "main": "index.js",
-    "repository": "git@111.231.146.191:/home/git/notebook.git",
+    "repository": "git+https://github.com/lionel217920/notebook-vuepress.git",
     "license": "MIT",
-    "dependencies": {
-        "@babel/compat-data": "^7.11.0"
-    }
+    "author": "Lionel"
 }
