@@ -1,18 +1,17 @@
 module.exports = [
     {
-        title: 'VueJS',
+        title: 'Networking',
         collapsable: false,
         sidebarDepth: 2,
         children: [
-            ['/front-end/vuejs/', 'VueJS']
+            ['/tools/proxy-tools', 'fq工具']
         ]
     },
     {
-        title: 'Webpack',
+        title: 'Developer',
         collapsable: false,
-        sidebarDepth: 2,
         children: [
-            ['/front-end/webpack/', 'Webpack']
+            ['/tools/intellij-idea', 'Intellij IDEA']
         ]
     }
 ]

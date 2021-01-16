@@ -34,7 +34,7 @@ module.exports = [
     items: [
       {text: 'Computer Networking', link: '/networking/http/'},
       {text: 'TCP/IP', link: '/networking/http/'},
-      {text: 'Http', link: '/networking/ssh/'}
+      {text: 'HTTP', link: '/networking/ssh/'}
     ]
   },
   {
@@ -87,46 +87,10 @@ module.exports = [
     ]
   },
   {
-    text: 'Front end',
+    text: 'Others',
     items: [
-      {
-        text: 'Node',
-        items: [
-          {text: 'Npm', link: '/front-end/npm/'},
-          {text: 'Yarn', link: '/front-end/yarn/'}
-        ]
-      },
-      {
-        text: 'Vue',
-        items: [
-          {text: 'VuePress', link: '/front-end/vuepress/'},
-        ]
-      },
-      {
-        text: 'Others',
-        items: [
-          {text: 'Webpack', link: '/front-end/webpack/'}
-        ]
-      }
-    ]
-  },
-  {
-    text: 'Tools',
-    items: [
-      {
-        text: 'Developer',
-        items: [
-          {text: 'Git', link: '/tools/git/'},
-          {text: 'Maven', link: '/tools/maven/'},
-          {text: 'IDEA', link: '/tools/idea/'},
-        ]
-      },
-      {
-        text: 'Test',
-        items: [
-          {text: 'Charles', link: '/tools/charles/'}
-        ]
-      }
+      { text: 'Front End', link: '/front-end/'},
+      { text: 'Tools', link: '/tools/'}
     ]
   }
 ]

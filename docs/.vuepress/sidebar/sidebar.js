@@ -26,16 +26,10 @@ module.exports = {
   '/server/nginx': require('./server/nginx'),
   '/server/vmware/': require('./server/vmware'),
 
-  '/front-end/npm/': require('./front-end/npm'),
-  '/front-end/yarn/': require('./front-end/yarn'),
-  '/front-end/vuepress/': require('./front-end/vuepress'),
-  '/front-end/webpack/': require('./front-end/webpack'),
+  '/front-end/': require('./front-end'),
 
   '/os/linux/': require('./os/linux'),
   '/os/mac/': require('./os/mac'),
 
-  '/tools/git': require('./tools/git'),
-  '/tools/maven': require('./tools/maven'),
-  '/tools/charles': require('./tools/charles'),
-  '/tools/jmeter': require('./tools/jmeter'),
+  '/tools/': require('./tools'),
 }
