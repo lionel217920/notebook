@@ -23,23 +23,23 @@
 
 - 172.16.203.130
 
-上面搭建了**DNS服务器**
+DNS, Nginx
 
 - 172.16.203.140
 
-上面搭建了**Nginx服务器**
+Nginx, edas-lightweight-server, openjdk, 
 
 - 172.16.203.150
 
-MySQL，rocketmq，zk, es
+MySQL，RocketMQ，Zookeeper, es，Redis
 
 - 172.16.203.151
 
-MySQL，rocketmq，zk, es
+MySQL，RocketMQ，Zookeeper, es，Redis
 
 - 172.16.203.152
 
-MySQL，rocketmq，zk, es
+MySQL，RocketMQ，Zookeeper, es，Redis
 
 - 172.16.203.201
 
