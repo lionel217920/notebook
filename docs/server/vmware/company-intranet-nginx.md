@@ -75,7 +75,9 @@ make
 make install
 ```
 
-## 配置两台Tomcat服务器
+## 配置两台web服务器
+
+
 
 
 

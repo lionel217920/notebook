@@ -4,7 +4,7 @@
 
 使用**172.16.203.130**这台机器
 
-1. 首先安装**bind**软件
+### 安装bind软件
 
 ```bash
 yum -y install bind*
@@ -12,7 +12,7 @@ yum -y install bind*
 
 ![7W8aeb](https://image.hualihai.cn/blog/7W8aeb.png)
 
-2. 启动**bind**服务
+启动**bind**服务
 
 ```bash
 systemctl start named.service
@@ -26,7 +26,7 @@ netstat -an | grep :53
 
 ![68VpCa](https://image.hualihai.cn/blog/68VpCa.png)
 
-3. Bind的默认路径设定与**chroot**
+### Bind的默认路径设定与**chroot**
 
 chroot代表的是 **change to root(根目录)** 的意思，root代表的是根目录。CentOS默认将bind锁在`/var/named/chroot`目录中.
 
@@ -36,7 +36,7 @@ BIND的配置文件为`/etc/named.conf`
 
 ![za2Gmd](https://image.hualihai.cn/blog/za2Gmd.png)
 
-4. 编辑`/etc/named.conf`文件
+### 编辑`/etc/named.conf`文件
 
 原始文件内容
 
@@ -111,6 +111,83 @@ listen-on port 53 { any; };
 allow-query     { any; };
 ```
 
-5. 数据库档案设定
+### 数据库档案设定
+
+- 编辑`named.rfc1912.zones`文件
+
+添加内容
+
+```conf
+zone "stage.com" IN {
+       type master;
+       file "named.stage.com";
+       allow-update { none; };
+};
+
+zone "203.16.172.in-addr.arpa" IN {
+       type master;
+       file "named.172.16.203";
+       allow-update { none; };
+};
+```
+
+- 创建 **named.stage.com** 文件
+
+```bash
+touch /var/named/named.stage.com
+vim /var/named/named.centos.vbird
+```
+
+添加如下内容
+
+```conf
+$TTL  1H
+@       IN SOA dns.stage.com. lionel.mail.stage.com.(2020112301 3H 15M 1W 1D)
+@       IN NS   dns.stage.com.
 
 
+dns.stage.com.    IN A      172.16.203.130
+www.stage.com.    IN A    172.16.203.140
+goods.stage.com.   IN A    172.16.203.140
+cart.stage.com.   IN A   172.16.203.140
+```
+
+- 创建 **named.172.16.203** 文件
+
+```bash
+vim /var/named/named.172.16.203
+```
+
+添加如下内容
+
+```conf
+$TTL  600
+@       IN SOA  dns.stage.com. lionel.mail.stage.com.(2020112301 3H 15M 1W 1D)
+@       IN NS   dns.stage.com.
+
+130    IN PTR    dns.stage.com.
+140    IN PTR    www.stage.com.
+140    IN PTR    goods.stage.com.
+140    IN PTR    cart.stage.com.
+```
+
+### DNS 的启动观察与防火墙
+
+- 启动DNS
+
+```bash
+systemctl start named.service
+```
+
+- 查看日志
+
+```bash
+tail -n 30 /var/log/messages | grep named
+```
+
+- 开放53端口
+
+```bash
+firewall-cmd --zone=public --add-port=53/tcp --permanent
+firewall-cmd --reload
+```
