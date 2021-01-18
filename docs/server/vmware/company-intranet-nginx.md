@@ -75,9 +75,124 @@ make
 make install
 ```
 
+## 修改nginx.conf
+
+```conf
+#user  nobody;
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+    #                  '$status $body_bytes_sent "$http_referer" '
+    #                  '"$http_user_agent" "$http_x_forwarded_for"';
+
+    #access_log  logs/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    include /usr/local/nginx/conf/sites-available/*.conf;
+
+}
+```
+
 ## 配置两台web服务器
 
+1. goods.stage.com
 
+```bash
+vim /usr/local/nginx/conf/sites-available/goods.conf
+```
+
+```conf
+server {
+        listen       80;
+        server_name  goods.stage.com;
+
+        #charset koi8-r;
+
+        #access_log  logs/goods.access.log  main;
+
+        location / {
+            #root   html;
+            #index  index.html index.htm;
+            proxy_read_timeout 30;
+            proxy_pass http://goods.stage.com;
+        }
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+}
+
+upstream goods.stage.com {
+    server 172.16.203.201:8080 weight=10;
+}
+```
+
+2. cart.stage.com
+
+```bash
+vim /usr/local/nginx/conf/sites-available/cart.conf
+```
+
+```conf
+server {
+        listen       80;
+        server_name  cart.stage.com;
+
+        #charset koi8-r;
+
+        #access_log  logs/goods.access.log  main;
+
+        location / {
+            #root   html;
+            #index  index.html index.htm;
+            proxy_read_timeout 30;
+            proxy_pass http://cart.stage.com;
+        }
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+}
+
+upstream cart.stage.com {
+    server 172.16.203.202:8080 weight=10;
+}
+```
+
+## 生成HTTPS证书
 
 
 
