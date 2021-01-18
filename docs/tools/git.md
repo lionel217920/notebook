@@ -18,6 +18,45 @@
 git config --global user.email “you@example.com”
 git config --global user.name “Your Name”
 
+## 重置提交用户信息
+
+1. 修改正确的用户名和邮箱
+
+```bash
+git config user.name 'xxx'
+git config user.email 'xxx@xx.com'
+```
+
+2. Rebase之前的提交记录
+
+```bash
+git rebase -i HEAD~8
+```
+
+3. 需要修改某一次的提交
+
+切换至英文输入法, 按下i字母, 即可进入编辑模式, 此时用光标定位到需要修改的那一条记录, 将pick修改成edit
+
+4. 重置用户信息
+
+```bash
+git commit --amend --reset-author
+```
+
+5. 继续Rebase
+
+```bash
+git rebase --continue
+```
+
+当出现 **Successfully rebased and updated refs/heads/master.** 结束
+
+6. 全部rebase完成之后强退代码到远端
+
+```bash
+git push --force  origin  master
+```
+
 ## 下载的工程带有submodule
 
 https://git-scm.com/book/en/v2/Git-Tools-Submodules

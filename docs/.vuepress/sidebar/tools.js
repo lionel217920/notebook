@@ -11,7 +11,8 @@ module.exports = [
         title: 'Developer',
         collapsable: false,
         children: [
-            ['/tools/intellij-idea', 'Intellij IDEA']
+            ['/tools/intellij-idea', 'Intellij IDEA'],
+            ['/tools/git', 'Git']
         ]
     }
 ]

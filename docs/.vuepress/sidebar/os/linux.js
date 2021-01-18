@@ -4,7 +4,8 @@ module.exports = [
         collapsable: false,
         sidebarDepth: 2,
         children: [
-            ['/os/linux/network/firewall', '防火墙']
+            ['/os/linux/network', '网络配置'],
+            ['/os/linux/firewall', '防火墙']
         ]
     },
     {
