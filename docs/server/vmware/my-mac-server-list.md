@@ -31,15 +31,15 @@ Nginx, edas-lightweight-server, openjdk,
 
 - 172.16.203.150
 
-MySQL，RocketMQ，Zookeeper, es，Redis
+MySQL，RocketMQ，Zookeeper, es，Redis, openJdk
 
 - 172.16.203.151
 
-MySQL，RocketMQ，Zookeeper, es，Redis
+MySQL，RocketMQ，Zookeeper, es，Redis, openJdk
 
 - 172.16.203.152
 
-MySQL，RocketMQ，Zookeeper, es，Redis
+MySQL，RocketMQ，Zookeeper, es，Redis, openJdk
 
 - 172.16.203.201
 
