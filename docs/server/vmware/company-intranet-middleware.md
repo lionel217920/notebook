@@ -85,3 +85,12 @@ firewall-cmd --zone=public --add-port=3333/tcp --permanent
 firewall-cmd --zone=public --add-port=3334/tcp --permanent 
 firewall-cmd --reload
 ```
+
+## Canal集群环境搭建
+
+1. 机器部署 - **两节点**
+
+- 172.16.203.150
+- 172.16.203.151
+
+2. 

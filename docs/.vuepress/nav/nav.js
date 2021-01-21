@@ -83,7 +83,8 @@ module.exports = [
   {
     text: 'Middleware', 
     items: [
-      {text: 'RocketMQ', link: '/middleware/rocketmq/'}
+      {text: 'RocketMQ', link: '/middleware/rocketmq/'},
+      {text: 'ZooKeeper', link: '/middleware/zookeeper/'}
     ]
   },
   {

@@ -1,10 +1,10 @@
 module.exports = [
     {
-        title: 'Zookeeper',
+        title: 'ZooKeeper',
         collapsable: false,
         sidebarDepth: 2,
         children: [
-            ['/middleware/zookeeper/', 'Introduction']
+            ['/middleware/zookeeper/', 'ZooKeeper基础']
         ]
     }
 ]

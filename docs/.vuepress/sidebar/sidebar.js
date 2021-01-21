@@ -31,5 +31,8 @@ module.exports = {
   '/os/linux/': require('./os/linux'),
   '/os/mac/': require('./os/mac'),
 
+  '/middleware/rocketmq/': require('./middleware/rocketmq'),
+  '/middleware/zookeeper/': require('./middleware/zookeeper'),
+
   '/tools/': require('./tools'),
 }
