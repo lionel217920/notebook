@@ -1,11 +1,11 @@
 module.exports = [
     {
-        title: 'Installation',
+        title: 'MySQL Reference Manual',
         collapsable: false,
         sidebarDepth: 2,
         children: [
-            ['/middleware/activemq/', 'jihe'],
-            ['/middleware/rocketmq/', 'RocketMQ']
+            ['/database/mysql/installation', 'Installing And Upgrading'],
+            ['/database/mysql/shell', 'MySQL Shell']
         ]
     }
 ]

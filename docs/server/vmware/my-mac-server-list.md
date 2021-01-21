@@ -33,6 +33,8 @@ Nginx, edas-lightweight-server, openjdk,
 
 MySQL，RocketMQ，Zookeeper, es，Redis, openJdk
 
+MySQLroot密码：**Lionel123!**
+
 - 172.16.203.151
 
 MySQL，RocketMQ，Zookeeper, es，Redis, openJdk
