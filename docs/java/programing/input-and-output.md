@@ -1,4 +1,6 @@
-# switch语句踩坑记录
+# Java中的输入与输出
+
+## switch语句踩坑记录
 
 ::: warning
 Constant expression required

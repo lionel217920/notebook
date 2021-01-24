@@ -1,7 +1,8 @@
 module.exports = {
-  '/java/class/': require('./java/class'),
-  '/java/collection/': require('./java/collection'),
+  '/java/programing/': require('./java/programing'),
   '/java/oop/': require('./java/oop'),
+  '/java/collection/': require('./java/collection'),
+  '/java/io/': require('./java/io'),
   '/java/concurrency/': require('./java/concurrency'),
   '/java/tools/': require('./java/tools'),
 

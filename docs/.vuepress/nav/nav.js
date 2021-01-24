@@ -3,11 +3,12 @@ module.exports = [
     text: 'Java', 
     items: [
       {
-        text: 'Base',
+        text: 'Basic',
         items: [
-          {text: 'Class', link: '/java/class/'},
-          {text: 'Collection', link: '/java/collection/'},
+          {text: 'Programing', link: '/java/programing/'},
           {text: 'OOP', link: '/java/oop/'},
+          {text: 'Collection', link: '/java/collection/'},
+          {text: 'I/O', link: '/java/io/'}
         ]
       },
       {
@@ -15,7 +16,7 @@ module.exports = [
         items: [
           {text: 'Concurrency', link: '/java/concurrency/'},
           {text: 'JVM', link: '/jvm/'},
-          {text: 'Tools', link: '/java/tools/'}
+          {text: 'Dynamic', link: '/java/dynamic/'}
         ]
       }
     ] 

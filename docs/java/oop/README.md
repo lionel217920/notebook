@@ -65,3 +65,12 @@ searchResult.setContent(goodsList);
 
 
 参数定义成接口，两个不同的`model`实现接口，实现简单的适配器模式
+
+# Aspect oriented programming
+面向切面编程
+
+aop in java
+
+aop in spring
+
+自定义注解 + aop
