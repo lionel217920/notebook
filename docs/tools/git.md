@@ -70,20 +70,26 @@ git submodule update --init
 ## 本地新建项目推送到远端git仓库
 
 - 创建新版本库
+
+```bash
 git clone git@code.aliyun.com:lionel/txp-framework.git
 cd txp-framework
 touch README.md
 git add README.md
 git commit -m "add README"
 git push -u origin master
+```
 
 - 已存在的文件夹或 Git 仓库
+
+```bash
 cd existing_folder
 git init
 git remote add origin git@code.aliyun.com:lionel/txp-framework.git
 git add .
 git commit
 git push -u origin master
+```
 
 ## 分支管理
 

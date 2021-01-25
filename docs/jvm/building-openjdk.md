@@ -38,3 +38,7 @@ autoconf --version
 ```bash
 make --version
 ```
+
+
+make all 是全量编译
+make images 是增量编译

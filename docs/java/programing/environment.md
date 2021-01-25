@@ -16,3 +16,11 @@ export PATH=$PATH:$JAVA_HOME/bin
 ## JDK源码阅读环境
 
 [参考B站视频](https://www.bilibili.com/video/BV1V7411U78L)
+
+[我的Github项目](https://github.com/lionel217920/jdk8-source-learning)
+
+## 编译自己的OpenJDK
+
+[参考B站视频](https://www.bilibili.com/video/BV1zT4y177Zf)
+
+[我的Github项目](https://github.com/lionel217920/openjdk11-source-learning)
