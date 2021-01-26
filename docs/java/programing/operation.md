@@ -19,7 +19,14 @@
 int a = 2147483647 * 2;
 ```
 
-结果为什么是-2？？
+结果为什么是-2 ??
+
+```java
+byte a = 1;
+byte b = 127;
+byte c = (byte)(a + b);
+System.out.print(c); // c is -128
+```
 
 2. 两个小数相减结果有小数
 
@@ -154,36 +161,6 @@ Math.tan
 
 ```java
 Math.log
-```
-
-## 数值类型之间的转换
-
-- 6个实心箭头 - 表示无信息丢失转换
-- 3个虚心箭头 - **表示有可能有精度丢失**
-
-![s0Ni52](https://image.hualihai.cn/blog/s0Ni52.png)
-
-```java
-int n = 123456789;
-float f = n; // f is 1.1234567892E8
-```
-
-## 强制类型转换
-
-int类型的值将自动地转换为double类型。有时也需要将double类型转换为int类型。在Java中允许这种数值之间的类型转换。
-
-**需要通过强制类型转换(cast)实现这个操作**
-
-- 可能会丢失一些精度
-- 超出目标类型值的范围会得到完全不同的值
-
-```java
-double x = 9.97;
-int nx = int (x); // nx is 9
-```
-
-```java
-byte a = (byte) 300; // a is 44
 ```
 
 ## 结合赋值的运算符
