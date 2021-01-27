@@ -1,37 +1,5 @@
 # Java基本程序设计
 
-## 参数与变量
-
-A parameter is a variable in a method definition.
-
-参数是一个方法所定义的变量。
-
-```java
-int max(x, y);
-```
-
-其中x, y 为参数
-
-When a method is called, the arguments are the data you pass into the method's parameters.
-
-在调用一个方法时，变量是你传给方法所定义的参数的数据。
-
-```java
-int a = 1;
-int b = 2;
-max(a, b);
-```
-
-a,b 为变量
-
-Parameter is variable in the declaration of function.
-
-参数是方法定义中声明的变量。
-
-Argument is the actual value of this variable that gets passed to function.
-
-变量是传给方法的实际数据。
-
 ## 基本类型
 
 

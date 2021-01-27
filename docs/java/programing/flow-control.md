@@ -89,6 +89,18 @@ switch的转换和具体系统实现有关。
 - String用于switch时也会转成整数，通过hashcode转换
 - 不可以使用long型，因为跳转表值的存储空间为32位
 
+日常采坑记录：
+
+```java{4}
+Map<Integer, Integer> map = orderService.findOrderCountByUserId(userId);
+map.forEach((type , count) -> {
+    switch (type) {
+        case OrderStatusType.WAITING_DELIVERED.value():
+            break;
+    }
+});
+```
+
 ## 循环语句
 
 在Java中循环有四种形式：
