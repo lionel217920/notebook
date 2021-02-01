@@ -93,6 +93,35 @@ public static void useResources() throws Exception {
 
 资源r的声明在try内，不用再调用finally，在语句执行完会自动调用资源的close方法。
 
+Java中的语法糖
+
+```java
+try {
+    this.self.deleteById(oldId);
+    GoodsIdChangeMessage message = new GoodsIdChangeMessage();
+    message.setId(nowId);
+    message.setOldId(oldId);
+    this.messageQueueService.sendGoodsIdChange(message);
+    this.goodsStatisticService.changeGoodsId(nowId, oldId);
+} catch (Throwable var17) {
+    var7 = var17;
+    throw var17;
+} finally {
+    if (ignored != null) {
+        if (var7 != null) {
+            try {
+                ignored.close();
+            } catch (Throwable var16) {
+                var7.addSuppressed(var16);
+            }
+        } else {
+            ignored.close();
+        }
+    }
+
+}
+```
+
 ## throws
 
 **throws跟在方法的括号外面，多个异常用逗号分隔，表明这个方法内可能会抛出异常，且没有对异常进行处理。**

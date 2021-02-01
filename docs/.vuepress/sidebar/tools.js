@@ -4,7 +4,7 @@ module.exports = [
         collapsable: false,
         sidebarDepth: 2,
         children: [
-            ['/tools/proxy-tools', 'fq工具']
+            ['/tools/proxy-tools', '翻墙工具']
         ]
     },
     {
@@ -13,6 +13,7 @@ module.exports = [
         children: [
             ['/tools/intellij-idea', 'Intellij IDEA'],
             ['/tools/git', 'Git'],
+            ['/tools/gitHub', 'GitHub'],
             ['/tools/maven', 'Maven']
         ]
     }

@@ -86,6 +86,9 @@ git push -u origin master
 cd existing_folder
 git init
 git remote add origin git@code.aliyun.com:lionel/txp-framework.git
+git pull origin master
+git config user.name "Lionel"
+git config user.email "lionel217920@163.com"
 git add .
 git commit
 git push -u origin master
