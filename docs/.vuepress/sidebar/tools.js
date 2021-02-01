@@ -13,7 +13,7 @@ module.exports = [
         children: [
             ['/tools/intellij-idea', 'Intellij IDEA'],
             ['/tools/git', 'Git'],
-            ['/tools/gitHub', 'GitHub'],
+            ['/tools/github', 'GitHub'],
             ['/tools/maven', 'Maven']
         ]
     }
