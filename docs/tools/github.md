@@ -33,7 +33,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 5. 在确认的时候输入一个安全口令。
 
-## 将SSH Key添加到ssh-agent
+### 将SSH Key添加到ssh-agent
 
 1. 确保ssh-agent正在运行
 
@@ -72,7 +72,7 @@ git config user.name "Lionel"
 git config user.email "lionel217920@163.com"
 ```
 
-### 重置之前的提记录
+重置之前的提记录
 
 1. Rebase之前的提交记录
 

@@ -5,6 +5,8 @@ module.exports = [
         sidebarDepth: 2,
         children: [
             ['/java/oop/class-base', '类的基础'],
+            ['/java/oop/class-compound', '类的组合'],
+            ['/java/oop/class-extend', '类的继承'],
             ['/java/oop/class/pack', '常用基础类-包装类'],
             ['/java/oop/class/string', '常用基础类-String'],
             ['/java/oop/class/cloneable', '常用基础类-Cloneable']
