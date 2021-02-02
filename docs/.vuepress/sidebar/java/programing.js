@@ -14,7 +14,8 @@ module.exports = [
             ['/java/programing/array', '数组'],
             ['/java/programing/string', '字符串'],
             ['/java/programing/function-call', '理解函数调用'],
-            ['/java/programing/keyword', 'Java中的关键字']
+            ['/java/programing/keyword', 'Java中的关键字'],
+            ['/java/programing/syntactic-sugar', 'Java中的语法糖']
         ]
     }
 ]

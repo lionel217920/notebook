@@ -154,3 +154,10 @@ int nx = int (x); // nx is 9
 byte a = (byte) 300; // a is 44
 ```
 
+## String和基础类型的转换
+
+```java
+int c = 100;
+System.out.println("s" + c);
+```
+

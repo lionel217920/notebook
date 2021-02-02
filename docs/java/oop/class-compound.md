@@ -131,6 +131,8 @@ public static void test() {
 5. ShapeManager初始化代码块
 6. ShapeManager构造方法
 
+先加载`ShapeManager`类，然后加载`Shape`类，**注意的是，先执行`Shape`的初始化操作，后执行`ShapeManager`的初始化操作**。
+
 需要注意的是，类中如果只含有对象数组，代码的执行顺序
 
 1. ShapeManager静态初始化代码块
