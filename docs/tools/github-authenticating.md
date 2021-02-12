@@ -1,6 +1,10 @@
-# GitHub
+# Authenticating to GitHub
 
-## 使用SSH连接GitHub
+[官方文档地址](https://docs.github.com/en/github/authenticating-to-github)
+
+## Connecting to GitHub with SSH
+
+[官方文档地址](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
 ### 创建SSH
 
@@ -63,7 +67,9 @@ ssh-add -l
 ssh -T git@github.com
 ```
 
-## GitHub提交没有统计commit
+## Troubleshooting commit signature verification
+
+[文档地址](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-commit-signature-verification)
 
 **配置的用户名和邮箱不匹配**
 
@@ -72,7 +78,7 @@ git config user.name "Lionel"
 git config user.email "lionel217920@163.com"
 ```
 
-重置之前的提记录
+### 重置之前的提记录
 
 1. Rebase之前的提交记录
 

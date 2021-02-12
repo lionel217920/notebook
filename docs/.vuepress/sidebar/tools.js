@@ -8,12 +8,13 @@ module.exports = [
         ]
     },
     {
-        title: 'Developer',
+        title: 'DevOps',
         collapsable: false,
         children: [
             ['/tools/intellij-idea', 'Intellij IDEA'],
             ['/tools/git', 'Git'],
-            ['/tools/github', 'GitHub'],
+            ['/tools/github-authenticating', 'GitHub Authenticating'],
+            ['/tools/github-pages', 'GitHub Pages'],
             ['/tools/maven', 'Maven']
         ]
     }
