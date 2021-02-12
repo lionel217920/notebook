@@ -39,3 +39,26 @@ Intellij IDEA插件
 虚拟机环境
 
 - vmware
+
+代码托管工具
+
+- GitHub
+- GitLab
+- Coding
+- Gitee
+
+静态页面托管工具
+
+- GitHub Pages
+- Netlify
+- Gitee pages
+- Coding Pages
+- GitLab Pages 
+
+持续集成
+
+https://zhuanlan.zhihu.com/p/59686072
+
+- Jenkins
+- Travis CI
+- Circle CI

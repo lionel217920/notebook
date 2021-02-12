@@ -4,7 +4,8 @@ module.exports = [
         collapsable: false,
         sidebarDepth: 2,
         children: [
-            ['/front-end/yarn', 'Yarn']
+            ['/front-end/yarn', 'Yarn'],
+            ['/front-end/npm', 'NPM']
         ]
     }
 ]

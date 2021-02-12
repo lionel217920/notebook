@@ -1,3 +1,50 @@
+# CLI documentation
+
+<TOC />
+
+## install
+
+::: tip
+安装一个包会把这个包所有依赖的包都安装
+:::
+
+```bash
+npm install <package>
+```
+
+查看全局安装的包
+
+```bash
+npm ls -g --depth 0
+```
+
+
+
+
+
+cnpm -v
+
+淘宝npm的使用 使用cnpm
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+网址：
+https://developer.aliyun.com/mirror/NPM?from=tnpm
+
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+/Users/lionel/.nvm/versions/node/v10.15.3/bin/cnpm -> /Users/lionel/.nvm/versions/node/v10.15.3/lib/node_modules/cnpm/bin/cnpm
++ cnpm@6.1.1
+added 685 packages from 970 contributors in 9.852s
+
+
+
+# npx 介绍
+npx主要解决了哪些问题，调用项目中安装的模块
+http://www.ruanyifeng.com/blog/2019/02/npx.html
+
+
+
+
 https://medium.com/coinmonks/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8
 
 ## About
@@ -76,3 +123,4 @@ found 12 vulnerabilities (5 low, 1 moderate, 6 high)
 
 `package-lock.json`
 npm notice created a lockfile as package-lock.json. You should commit this file.
+
