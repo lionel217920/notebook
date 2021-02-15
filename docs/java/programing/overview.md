@@ -98,5 +98,11 @@ JavaSE的标准类库
 
 属于标准类库的扩展库
 
+## Others in JVM
+
+- Scala
+- Groovy
+- JRuby
+- Jython
 
 

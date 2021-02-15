@@ -71,14 +71,14 @@ ssh -T git@github.com
 
 [文档地址](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-commit-signature-verification)
 
+### 提交代码后GitHub没有统计
+
 **配置的用户名和邮箱不匹配**
 
 ```bash
 git config user.name "Lionel"
 git config user.email "lionel217920@163.com"
 ```
-
-### 重置之前的提记录
 
 1. Rebase之前的提交记录
 
@@ -103,6 +103,12 @@ git rebase --continue
 ```
 
 当出现 **Successfully rebased and updated refs/heads/master.** 结束
+
+5. 强推到master
+
+```bash
+git push origin master --force
+```
 
     
     

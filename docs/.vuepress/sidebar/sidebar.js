@@ -5,6 +5,7 @@ module.exports = {
   '/java/io/': require('./java/io'),
   '/java/concurrency/': require('./java/concurrency'),
   '/java/tools/': require('./java/tools'),
+  '/java/dynamic/': require('./java/dynamic'),
 
   '/jvm/': require('./jvm'),
 
