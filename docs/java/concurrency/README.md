@@ -63,3 +63,28 @@ ThreadLocal和synchronized的区别
 如果把一个事务可看作是一个程序,它要么完整的被执行,要么完全不执行。这种特性就叫原子性。
 
 为什么多线程不一定快，如何解决？
+
+
+- 理论基础
+
+  - ThreadPool
+
+- 容器
+
+  - ConcurrentHashMap493
+
+- 工具类
+
+  - CountDownLatch531
+  - ThreadLoal
+  - CyclicBarrier533
+  - Semaphore
+
+- 设计模式
+
+  - Fork/Join
+  - Future
+
+- JMM
+
+
