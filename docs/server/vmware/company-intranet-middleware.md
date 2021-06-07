@@ -94,3 +94,7 @@ firewall-cmd --reload
 - 172.16.203.151
 
 2. 
+
+
+## Redis集群环境搭建
+

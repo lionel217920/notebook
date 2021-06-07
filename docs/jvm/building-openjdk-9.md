@@ -1,0 +1,3 @@
+# Configure
+
+bash ./configure --with-debug-level=slowdebug --disable-warnings-as-errors --with-jvm-variants=server --with-target-bits=64 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk --with-num-cores=6 --with-memory-size=8000 --with-boot-jdk=/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home --with-freetype-include=/usr/local/include/freetype2 --with-freetype-lib=/usr/local/lib/ --with-toolchain-type=clang --enable-ccache
